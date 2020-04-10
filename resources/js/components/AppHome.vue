@@ -1,6 +1,7 @@
 <template>
-<v-app>
+<v-app app>
     <toolbar></toolbar>
+    <router-view></router-view>
     <app-footer></app-footer>
 </v-app>
 </template>
@@ -9,10 +10,12 @@
 
 import Toolbar from './Toolbar.vue';
 import AppFooter from './AppFooter.vue';
+import Login from './login/Login';
 export default {
     components: {
         'toolbar': Toolbar,
-        'app-footer' : AppFooter
+        'app-footer' : AppFooter,
+        'login':Login
     }
     
 }

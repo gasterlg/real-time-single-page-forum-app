@@ -1,20 +1,24 @@
 <template>
    <nav>
-       <v-toolbar app>
+       <v-toolbar >
            <v-toolbar-title>Title</v-toolbar-title>
 <v-spacer></v-spacer>
-    <v-btn flat>
+
+        <v-btn >
         Forum
     </v-btn>
-     <v-btn flat>
+  
+     <v-btn >
         Ask Question
     </v-btn>
-     <v-btn flat>
+     <v-btn >
         Category
     </v-btn>
-     <v-btn flat>
+    <router-link to="/login">
+     <v-btn >
         Login
     </v-btn>
+    </router-link>
 
        </v-toolbar>
    </nav>
